@@ -11,17 +11,43 @@ Stránka bude v angličtině, ale bude zde možnost přeložení jazyka do češ
 
 ## Nápad a inspirace 
 
-Mojí halvní inspirací byli tyto stránky:
+Mojí halvní inspirací bylo toto video a stránky na awwwards.com:
+
+video:
+- https://www.youtube.com/watch?v=83j3Z4heXH0&list=WL&index=2&t=50s
+
+stránky:
+- https://www.awwwards.com/sites/hydrogen-oxygen
+- https://www.awwwards.com/sites/dsrv
+- https://www.awwwards.com/sites/soul-aether
+- https://www.awwwards.com/sites/vivatech-2022
+- https://www.awwwards.com/sites/dr-pepper
+- https://www.awwwards.com/sites/lucky-beard-global-1
 - https://www.awwwards.com/sites/welcome-to-planet-experience
 
-Chtěl bych na své stránce udělat něco podobného. Využít knihovnu three.js a obzvláštnit stránku 3D modely. Zároveň chci udělet stránku trochu interaktivní a přidat nějaké easter eggy / mini hry. Na stránce chci hlavně představit svůj blockchain projekt a své 3D modely.
+
+Chtěl bych na své stránce udělat něco, kde využiji knihovnu three.js a obzvláštnit stránku 3D modely. Zároveň chci udělet stránku trochu interaktivní a přidat nějaké easter eggy / mini hry. Na stránce chci hlavně představit svůj blockchain projekt a své 3D modely.
+
+### MoodBoard
+![MoodBoard](images/MoodBoard.png)
+
+### Font
+
+Na stránce použiji font - Raleway
+
+https://fonts.google.com/specimen/Roboto+Slab?preview.text=ahoj%20j%C3%A1%20jsem%20Pavel%20Oly%C5%A1ar&query=roboto&subset=cyrillic-ext&noto.lang=bg_Cyrl
 
 ### Barvy
 
 Na stránce se budu snažit používat hlavně barvy z této palety barev. Věřím, že stránka poté bude vypadat lépe.
 
+- --platinum: #ccdbdcff;
+- --non-photo-blue: #80ced7ff;
+- --tiffany-blue: #63c7b2ff;
+- --chinese-violet: #8e6c88ff;
+- --gunmetal: #263d42ff;
 
-![ColorPalette](ColorPalette.png)
+![ColorPalette](images/ColorPallette.png)
 https://coolors.co/palette/562c2c-f2542d-f5dfbb-0e9594-127475
 
 
@@ -36,6 +62,7 @@ https://coolors.co/palette/562c2c-f2542d-f5dfbb-0e9594-127475
 1. ÚVODNÍ STRÁNKA (Home)
     - úvod
     - hlavní 3d model
+    - hlavní informace
 
 2. INFO (About)
     - základní informace

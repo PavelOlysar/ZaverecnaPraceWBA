@@ -17,14 +17,13 @@ let mouseX = window.innerWidth / 2;
 let mouseY = window.innerHeight / 2;
 
 let object;
-let controls;
 
 let objToRender = 'monkey';
 
 const loader = new GLTFLoader();
 
 loader.load(
-  `models/${objToRender}/monkey.glb`,
+  `models/${objToRender}/monkey.glb`, // scene.gltf || monkey.glb
   function (gltf) {
     object = gltf.scene;
     scene.add(object);
@@ -57,8 +56,8 @@ function animate() {
   requestAnimationFrame(animate);
 
   if (object && objToRender === "eye" || object && objToRender === "monkey") {
-    object.rotation.y = -3 + mouseX / window.innerWidth * 3;
-    object.rotation.x = -1.2 + mouseY * 2.5 / window.innerHeight;
+    object.rotation.y = -1.5 + mouseX / window.innerWidth * 3;
+    object.rotation.x = -1.25 + mouseY * 2.5 / window.innerHeight;
   }
   renderer.render(scene, camera);
 }

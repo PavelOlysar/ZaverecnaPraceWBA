@@ -11,7 +11,7 @@ Stránka bude v angličtině, ale bude zde možnost přeložení jazyka do češ
 
 ## Nápad a inspirace 
 
-Mojí halvní inspirací bylo toto video a stránky na awwwards.com:
+Mojí hlavní inspirací bylo toto video a stránky na awwwards.com:
 
 video:
 - https://www.youtube.com/watch?v=83j3Z4heXH0&list=WL&index=2&t=50s

@@ -19,163 +19,33 @@
         rel="stylesheet">
 
     <!--Color Palette:
-        platinum: #ccdbdcff;
-        non-photo-blue: #80ced7ff;
-        tiffany-blue: #63c7b2ff;
-        chinese-violet: #8e6c88ff;
-        gunmetal: #263d42ff;
+    --white-color: #FFFFFF;
+    --dom-color: #0066FF;
+    --dark-color: #464555;
+    --com-color: #A1A1D7;
     -->
 
     <!--
+        Zdroje (barvy):
+            https://www.youtube.com/watch?v=KMS3VwGh3HY
+            https://mycolor.space/?hex=%230066FF&sub=1
+
+
         Zdroje (navbar):
             https://www.youtube.com/watch?v=aNDqzlAKmZc
             https://chat.openai.com/share/447e15ff-5792-4658-acb6-1335971b96a1
             https://www.w3schools.com/cssref/sel_hover.php
             https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration
+            https://www.w3schools.com/css/css3_shadows_box.asp
 
-        Zdroje (Three.js):
+        Zdroje (three.js):
+            https://github.com/gjmolter/web-3dmodel-threejs/blob/main/js/main.js
+            https://www.youtube.com/watch?v=lGokKxJ8D2c
 
     -->
 
-    <style>
-        :root {
-            --main-white-color: #f0f7f4;
-            --main-dark-color: #3c493f;
-            --pri-color: #002855;
-            --com-color: #036666;
-        }
-
-        /* Basic nastavení */
-        body {
-            background-color: var(--main-color);
-
-            width: 100%;
-            height: 2000px;
-
-            font-family: "Raleway", sans-serif;
-        }
-
-        /* Navbar */
-        .off-screen-menu {
-            background-color: var(--pri-color);
-            height: 100vh;
-            width: 100%;
-            max-width: 450px;
-            position: fixed;
-            top: 0;
-            right: -450px;
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            font-size: 3rem;
-            transition: 0.5s ease-out;
-        }
-
-        .off-screen-menu.active {
-            right: 0;
-        }
-
-        .off-screen-menu ul {
-            color: var(--com-color);
-            text-align: center;
-        }
-
-        .off-screen-menu li:hover {
-            color: #80ced7ff;
-            text-decoration: underline 4px;
-            font-weight: 800;
-            cursor: pointer;
-        }
-
-        nav {
-            padding: 1rem;
-            display: flex;
-            background-color: var(--pri-color);
-
-            width: 100vw;
-            position: fixed;
-            z-index: 1000;
-
-            font-weight: 700;
-        }
-
-        .logo {
-            color: var(--com-color);
-            width: 16rem;
-
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            text-align: center;
-            font-size: 2rem;
-
-            cursor: pointer;
-        }
-
-        .menu {
-            height: 50px;
-            width: 50px;
-            margin-left: auto;
-            margin-right: 3rem;
-            position: relative;
-
-            cursor: pointer;
-        }
-
-        .menu span {
-            height: 5px;
-            width: 100%;
-            background-color: var(--com-color);
-            border-radius: 25px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition: .5s ease-out;
-        }
-
-        .menu span:nth-child(1) {
-            top: 25%;
-        }
-
-        .menu span:nth-child(3) {
-            top: 75%;
-        }
-
-        .menu.active span:nth-child(1) {
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-        }
-
-        .menu.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .menu.active span:nth-child(3) {
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
-
-        /* main 3D model*/
-        #container3D canvas {
-            width: 100% !important;
-            height: 100% !important;
-            position: absolute;
-            top: 0;
-            left: 0;
-        }
-
-        @media (max-width: 400px) {
-            .logo {
-                width: 10rem;
-            }
-
-        }
-    </style>
+    <!--css-->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -200,7 +70,6 @@
     </nav>
 
     <header>
-        <div id="container3D"></div>
     </header>
 
     <main>
@@ -211,27 +80,9 @@
 
     </footer>
 
-    <script>
-        // menu
-        const menu = document.querySelector('.menu');
-        const offScreenMenu = document.querySelector('.off-screen-menu');
-
-        menu.addEventListener('click', () => {
-            menu.classList.toggle('active');
-            offScreenMenu.classList.toggle('active');
-        });
-
-        // logo
-        const logo = document.querySelector('.logo'); // Select the logo <div>
-
-        logo.addEventListener('click', scrollToTop);
-
-        function scrollToTop() {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-
-    </script>
-    <script type="module" src="js/main.js"></script>
+    <!--js-->
+    <script src="js/main.js"></script>
+    <!--three.js   <script type="module" src="js/mainThree.js"></script>-->
 </body>
 
 </html>
